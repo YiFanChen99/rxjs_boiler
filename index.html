@@ -2,10 +2,110 @@
 <html>
 <head>
 	<title>RxJS Boiler</title>
+	<style>
+		div {padding: 12px 5px;}
+		img {padding: 20px 0px;}
+		code {
+		  background-color: #eee;
+		  border: 1px solid #999;
+		  display: block;
+		  padding: 20px;
+		}
+		canvas {
+			width: 300px;
+			height: 150px;
+			border:1px solid #000000;
+			background-color: #00ff80;
+			display: block;
+		}
+	</style>
 </head>
 <body>
 	<h1>RxJS Boiler</h1>
 	<p>For more info, visit <a target="_blank" href="https://github.com/bradtraversy/rxjs_boiler">https://github.com/bradtraversy/rxjs_boiler</a></p>
+
+	<div>
+		<h2>Observable</h2>
+		<p>Array / stream</p>
+		<img src="https://media.giphy.com/media/xIkKIodaqNBdK/giphy.gif"/>
+	</div>
+
+	<div>
+		<h2>Click event</h2>
+		<button id=btnE>event</button>
+		<button id=btnO>observable</button>
+	</div>
+
+	<div>
+		<h2><a target="_blank" href="https://hackmd.synology.com/BI0qx6RJRGyODcso-gbkyg?both">Codes</a></h2>
+	</div>
+
+	<h2>Pipes</h2>
+	<div id=pipe>
+		<p>價</p>
+		<p>量</p>
+	</div>
+
+	<div>
+		<h2>Counter</h2>
+		<p id="counter">0</p>
+		<img src="https://static.coderbridge.com/img/techbridge/images/huli/rxjs/click_stream.gif"/>
+	</div>
+
+	<div>
+		<h2>Combination</h2>
+		<code>combine([1,2], [3,4]) => [1,2,3,4] / [4,6] / ... </code>
+		<img src="https://static.coderbridge.com/img/techbridge/images/huli/rxjs/merge.png"/>
+	</div>
+
+	<div>
+		<h2>Adder, subtracting</h2>
+		<div>
+			<p id="counter2">0</p>
+			<button id=btnA>+1</button>
+			<button id=btnS>-1</button>
+		</div>
+		<img src="https://static.coderbridge.com/img/techbridge/images/huli/rxjs/plus.gif"/>
+		<p>Compare with EventListener</p>
+	</div>
+
+	<div>
+		<h2>Example with canvas</h2>
+		<img src="https://static.coderbridge.com/img/techbridge/images/huli/rxjs/draw.gif"/>
+		<code>lineTo(x, y),  moveTo(x, y)</code>
+		<img src="https://static.coderbridge.com/img/techbridge/images/huli/rxjs/draw2.gif"/>
+
+		<h3>EventListener</h2>
+		<canvas id="event-canvas">
+		Your browser does not support the HTML canvas tag.
+		</canvas>
+
+		<h3>Version1+2</h2>
+		<canvas id="canvas1">
+		Your browser does not support the HTML canvas tag.
+		</canvas>
+		<p>FromEventObservable?</p>
+		<img src="https://static.coderbridge.com/img/techbridge/images/huli/rxjs/flat.png"/>
+
+		<h3>Version3</h2>
+		<canvas id="canvas3">
+		Your browser does not support the HTML canvas tag.
+		</canvas>
+		<img src="https://static.coderbridge.com/img/techbridge/images/huli/rxjs/flat2.png"/>
+		<img src="https://static.coderbridge.com/img/techbridge/images/huli/rxjs/takeuntil.png"/>
+
+		<h3>Version4</h2>
+		<canvas id="canvas4">
+		Your browser does not support the HTML canvas tag.
+		</canvas>
+
+		<h3>Version fin.</h2>
+		<canvas id="canvas-fin">
+		Your browser does not support the HTML canvas tag.
+		</canvas>
+	</div>
+
+	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
 
 	<script src="./dist/app.bundle.js"></script>
 </body>
